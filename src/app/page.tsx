@@ -196,7 +196,7 @@ export default function Home() {
         <div>
           <span className="eyebrow">Sobre a médica</span>
           <h2>Compromisso com a sua saúde em cada detalhe</h2>
-          <p>Dra. Letícia Sampaio é médica cardiologista com atuação focada em prevenção, diagnóstico e tratamento das doenças cardiovasculares.</p>
+          <p>Dra. Letícia Sampaio é médica Pós Graduada em Cardiologia, com atuação focada em prevenção, diagnóstico e tratamento das doenças cardiovasculares.</p>
           <ul className="check-list">
             <li>Formação sólida e atualização constante</li>
             <li>Atendimento individualizado e acolhedor</li>
@@ -352,7 +352,7 @@ export default function Home() {
             <h3>Responsável técnico</h3>
             <div className="footer-info-block">
               <strong>Dra. Letícia Sampaio</strong>
-              <span>Médica Cardiologista</span>
+              <span>Pós Graduada em Cardiologia</span>
               <span>CRM 73994</span>
             </div>
           </div>
