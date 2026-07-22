@@ -638,3 +638,40 @@ footer { padding: 62px 7vw 24px; }
     overscroll-behavior: contain;
   }
 }
+
+/* Perfil profissional da seção Sobre mim */
+.about { align-items: start; }
+.about-copy { min-width: 0; }
+.professional-profile { display: grid; gap: 24px; margin: 30px 0 34px; }
+.profile-group { padding-top: 22px; border-top: 1px solid var(--line); }
+.profile-group:first-child { padding-top: 0; border-top: 0; }
+.profile-group h3 { margin: 0 0 12px; color: var(--primary); font-size: 17px; letter-spacing: .08em; text-transform: uppercase; font-family: inherit; }
+.profile-group ul { margin: 0; padding-left: 20px; display: grid; gap: 9px; color: #4b3d41; line-height: 1.65; }
+.profile-group li::marker { color: var(--primary); }
+
+.cardiac-symptoms {
+  margin-top: 42px;
+  margin-bottom: 26px;
+  padding: 30px 34px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: linear-gradient(145deg, #fff 0%, #fff8ef 100%);
+  box-shadow: 0 16px 42px rgba(96,47,58,.06);
+}
+.cardiac-symptoms h3 { margin: 8px 0 20px; font-size: clamp(24px, 3vw, 34px); }
+.cardiac-symptoms ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 20px; margin: 0; padding: 0; list-style: none; }
+.cardiac-symptoms li { position: relative; padding-left: 26px; color: #4b3d41; font-weight: 700; line-height: 1.5; }
+.cardiac-symptoms li::before { content: '•'; position: absolute; left: 4px; top: -1px; color: var(--primary); font-size: 24px; line-height: 1; }
+
+@media (max-width: 900px) {
+  .cardiac-symptoms ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 650px) {
+  .about { gap: 34px; }
+  .professional-profile { gap: 20px; margin-top: 26px; }
+  .profile-group h3 { font-size: 15px; }
+  .profile-group ul { padding-left: 18px; }
+  .cardiac-symptoms { padding: 26px 22px; margin-top: 32px; }
+  .cardiac-symptoms ul { grid-template-columns: 1fr; gap: 10px; }
+}

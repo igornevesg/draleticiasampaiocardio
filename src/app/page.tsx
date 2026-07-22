@@ -37,7 +37,8 @@ const diseases = [
   { title: 'Insuficiência Cardíaca', text: 'Tratamento e monitoramento para melhorar sintomas, segurança e qualidade de vida.' },
   { title: 'Doença Arterial Coronariana', text: 'Prevenção e cuidado de angina, risco de infarto e obstruções nas artérias.' },
   { title: 'Colesterol Elevado', text: 'Controle dos níveis de colesterol e orientação para reduzir risco cardiovascular.' },
-  { title: 'Check-up Cardiológico', text: 'Avaliação preventiva para pessoas com histórico familiar, sintomas ou fatores de risco.' }
+  { title: 'Check-up Cardiológico', text: 'Avaliação preventiva para pessoas com histórico familiar, sintomas ou fatores de risco.' },
+  { title: 'Obesidade', text: 'Tratamento individualizado da obesidade com foco na redução do risco cardiovascular e acompanhamento multiprofissional.' }
 ];
 
 const testimonials = [
@@ -103,7 +104,7 @@ export default function Home() {
           <Image src="/images/logo-header.png" alt="Dra. Letícia Sampaio — Cardiologia" width={330} height={170} priority />
         </a>
         <nav className="desktop-nav">
-          <a href="#sobre">Sobre</a>
+          <a href="#sobre">Sobre mim</a>
           <a href="#areas">Áreas de atuação</a>
           <a href="#doencas">Doenças</a>
           <a href="#depoimentos">Depoimentos</a>
@@ -139,7 +140,7 @@ export default function Home() {
             </div>
             <nav aria-label="Navegação mobile">
               <a href="#inicio" onClick={closeMobileMenu}>Início</a>
-              <a href="#sobre" onClick={closeMobileMenu}>Sobre</a>
+              <a href="#sobre" onClick={closeMobileMenu}>Sobre mim</a>
               <a href="#areas" onClick={closeMobileMenu}>Áreas de atuação</a>
               <a href="#doencas" onClick={closeMobileMenu}>Principais doenças</a>
               <a href="#depoimentos" onClick={closeMobileMenu}>Depoimentos</a>
@@ -176,6 +177,47 @@ export default function Home() {
         </div>
       </section>
 
+      <section id="sobre" className="about section-pad soft-bg">
+        <div className="about-img"><Image src="/images/sobre-a-medica.webp" alt="Dra. Letícia Sampaio" width={900} height={1050} /></div>
+        <div className="about-copy">
+          <span className="eyebrow">Sobre mim</span>
+          <h2>Compromisso com a sua saúde em cada detalhe</h2>
+          <p>Dra. Letícia Sampaio é médica Pós Graduada em Cardiologia, com atuação focada em prevenção, diagnóstico e tratamento das doenças cardiovasculares.</p>
+
+          <div className="professional-profile">
+            <div className="profile-group">
+              <h3>Formação e atuação profissional</h3>
+              <ul>
+                <li>Pós graduada em Cardiologia pela Afya BH.</li>
+                <li>Médica plantonista da equipe de Cardiologia do Hospital Santa Casa Montes Claros.</li>
+                <li>Médica plantonista do CTI do Hospital das Clínicas Dr. Mário Ribeiro, em Montes Claros.</li>
+              </ul>
+            </div>
+
+            <div className="profile-group">
+              <h3>Experiência profissional</h3>
+              <ul>
+                <li>Diretora Clínica da UPA Venda Nova, em Belo Horizonte.</li>
+                <li>Plantonista da Unidade Coronariana Procordis/Santa Casa BH.</li>
+                <li>Instrutora de cursos de Emergência Médica.</li>
+              </ul>
+            </div>
+
+            <div className="profile-group">
+              <h3>Áreas de atuação</h3>
+              <ul>
+                <li><strong>Consulta Cardiológica:</strong> realização de anamnese, exame físico e análise de fatores de risco.</li>
+                <li><strong>Exames e Diagnóstico:</strong> solicitação e interpretação de exames complementares, desde Eletrocardiograma, Ecocardiograma, Teste Ergométrico, Holter 24h e MAPA 24h até exames avançados.</li>
+                <li><strong>Risco Cirúrgico:</strong> avaliação pré-operatória completa, com análise da capacidade do organismo suportar a cirurgia ou procedimento proposto e redução das chances de complicações.</li>
+                <li><strong>Emagrecimento:</strong> plano individual para tratamento da obesidade, com acompanhamento multiprofissional.</li>
+              </ul>
+            </div>
+          </div>
+
+          <a className="btn" href="#contato">Fale com a clínica <ChevronRight size={18}/></a>
+        </div>
+      </section>
+
       <section id="areas" className="section-pad">
         <span className="eyebrow">Áreas de atuação</span>
         <div className="section-title"><h2>Cuidado completo para o seu coração</h2><p>Cards mais elegantes, com ícone, descrição clara e sensação premium.</p></div>
@@ -190,23 +232,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <section id="sobre" className="about section-pad soft-bg">
-        <div className="about-img"><Image src="/images/sobre-a-medica.webp" alt="Dra. Letícia Sampaio" width={900} height={1050} /></div>
-        <div>
-          <span className="eyebrow">Sobre a médica</span>
-          <h2>Compromisso com a sua saúde em cada detalhe</h2>
-          <p>Dra. Letícia Sampaio é médica Pós Graduada em Cardiologia, com atuação focada em prevenção, diagnóstico e tratamento das doenças cardiovasculares.</p>
-          <ul className="check-list">
-            <li>Formação sólida e atualização constante</li>
-            <li>Atendimento individualizado e acolhedor</li>
-            <li>Explicações claras e condutas seguras</li>
-            <li>Plano terapêutico alinhado à rotina do paciente</li>
-          </ul>
-          <a className="btn" href="#contato">Fale com a clínica <ChevronRight size={18}/></a>
-        </div>
-      </section>
-
 
       <section className="cardiology-feature section-pad">
         <div className="cardiology-feature-copy">
@@ -274,6 +299,18 @@ export default function Home() {
               <p>{item.text}</p>
             </article>
           ))}
+        </div>
+        <div className="cardiac-symptoms">
+          <span className="eyebrow">Atenção aos sinais</span>
+          <h3>Principais sintomas que podem estar associados à doença cardíaca</h3>
+          <ul>
+            <li>Dor no peito</li>
+            <li>Falta de ar</li>
+            <li>Inchaço nas pernas</li>
+            <li>Palpitações</li>
+            <li>Desmaio</li>
+            <li>Cianose, caracterizada pela coloração arroxeada das extremidades da pele ou dos lábios</li>
+          </ul>
         </div>
         <div className="section-cta section-cta-gold">
           <div>
