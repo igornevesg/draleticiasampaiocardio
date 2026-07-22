@@ -182,7 +182,7 @@ export default function Home() {
         <div className="about-copy">
           <span className="eyebrow">Sobre mim</span>
           <h2>Compromisso com a sua saúde em cada detalhe</h2>
-          <p>Dra. Letícia Sampaio é médica Pós Graduada em Cardiologia, com atuação focada em prevenção, diagnóstico e tratamento das doenças cardiovasculares.</p>
+          <p>Sou pós graduada em Cardiologia, com atuação focada em prevenção, diagnóstico e tratamento das doenças cardiovasculares.</p>
 
           <div className="professional-profile">
             <div className="profile-group">
@@ -214,7 +214,7 @@ export default function Home() {
             </div>
           </div>
 
-          <a className="btn" href="#contato">Fale com a clínica <ChevronRight size={18}/></a>
+          <a className="btn" href="#contato">Agende sua consulta <ChevronRight size={18}/></a>
         </div>
       </section>
 
